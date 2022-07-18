@@ -1,0 +1,152 @@
+img {
+    height: 30px;
+    width: 30px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(6, 150px);
+    background-color: lightgray;
+    gap: 15px;
+}
+
+/* header */
+
+header {
+    grid-column: 2/6;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns:  50px repeat(5, 220px);
+    grid-template-rows:  80px 80px;
+    background-color: white;
+}
+
+.glass {
+    margin: 15px;
+}
+
+input {
+    height: 20px;
+    margin-top: 17px;
+    grid-column: 2/ 4;
+    border-radius: 20px;
+    background-color: #e5e7eb;
+}
+
+.ring {
+    grid-column: 5 / 6;
+    grid-row: 1;
+    justify-self: center;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.account-header {
+    grid-column:5;
+    grid-row: 1;
+    justify-self: end;
+    margin-top: 10px;
+}
+
+.name {
+    grid-column: 6;
+    grid-row: 1;
+    margin-top: 17px;
+    margin-left: 40px;
+}
+
+.account-bottom {
+    grid-column: 2 / 3;
+    align-self: center;
+    grid-row: 2;
+}
+
+.intro {
+    grid-column: 2 / 3;  
+    grid-row: 2;
+    margin-left: 40px;
+    align-self: center;
+}
+
+.header-list {
+    grid-column: 5/7;
+    grid-row: 2;
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+    align-items: center;
+
+}
+
+.header-list li {
+    background-color: #06b6d4;
+    border: 10px solid #06b6d4;
+    border-radius: 20px;
+    width: 70px;
+    text-align: center;
+}
+
+/* end of header */
+
+/* sidebar */
+
+.sidebar {
+    background-color:#06b6d4;
+    grid-row: 1 / 7;
+    display: grid;
+    grid-template-rows: 100px 300px 200px;
+    height: 1000px;
+}
+
+.sidebar ul, li {
+    list-style: none;
+}
+
+.dash {
+    align-self: center;
+    margin-left: 40px;
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .container {
+    display: inline-block;
+  }
+/* end of sidebar */
+
+/* projects section */
+.projects {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 50px repeat(3, 245px);
+    background-color:;
+    gap: 15px;
+}
+
+.projects article {
+    background-color: white;
+}
+
+.super {
+    grid-column: 1;
+}
+/* end of projects section */
+
+/* right sidebar */
+.right-sidebar {
+    display: grid;
+    grid-template-rows: 50px 475px;
+}
+/* end of right sidebar */
+
+.trending {
+    display: grid;
+    grid-template-rows: 50px repeat(4, 70px);
+}
+
+.list-p {
+    line-height: 0%;
+}
